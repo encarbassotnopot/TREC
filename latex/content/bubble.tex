@@ -1,0 +1,24 @@
+\chapter{Bubble sort}
+
+\section{Com funciona?}
+El \textit{bubble sort} compara cada element de la llista amb el següent (d'esquerra a dreta), canviant-ne la posició si el segon és més gran que el primer.
+Aquest procés es repeteix tantes vegades com faci falta per ordenar la llista.
+Sempre movem endavant l'element més gran de manera que, progressivament, al final del vector queden ordenats els elements més grans.
+El nom \textit{bubble sort} li és donat precisament per com els elements més grans floten cap a la superfície, com si es tractés de bombolles.
+És un algoritme extremadament lent.
+
+\section{Implementació}
+\lstinputlisting[language=Python]{../scripts/bubble.py}
+\vspace{1em}
+
+\begin{minipage}{\textwidth}
+	\section{Rendiment}
+	\noindent
+	\makebox[\textwidth][c]{
+		\input{tables/times/bubble.tex}
+		}
+	\vspace*{1em}
+	\begin{center}
+		\resizebox{\textwidth}{!}{\includesvg{bubble}}
+	\end{center}
+\end{minipage}

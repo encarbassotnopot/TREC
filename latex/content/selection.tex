@@ -1,0 +1,21 @@
+\chapter{Selection sort}
+
+\section{Com funciona?}
+Aquest algoritme itera sobre la llista buscant el nombre més baix, que col·loca al principi.
+A continuació repeteix el mateix procés buscant el segon nombre més baix, però no des de l'inici sinó des de la segona posició (sabem que en la primera hi trobem el nombre més baix).
+Aquest procediment es repeteix fins a ordenar tota la llista.
+
+\section{Implementació}
+\lstinputlisting[language=Python]{../scripts/selection.py}
+\vspace{1em}
+\begin{minipage}{\textwidth}
+	\section{Rendiment}
+	\noindent
+	\makebox[\textwidth][c]{
+		\input{tables/times/selection.tex}
+	}
+	\vspace*{1em}
+	\begin{center}
+		\resizebox{\textwidth}{!}{\includesvg{selection}}
+	\end{center}
+\end{minipage}
